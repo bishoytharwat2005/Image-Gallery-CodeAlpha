@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Gallery</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
+
+</head>
+
+<body class="bg-gradient-to-br from-zinc-950 via-zinc-900 to-black text-white">
+
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-50 backdrop-blur-xl bg-white/5 border-b border-white/10">
+        <div class="container mx-auto flex justify-between items-center px-5 py-4">
+
+            <h1 class="text-xl md:text-2xl font-bold tracking-wide">
+                ✦ Premium Gallery
+            </h1>
+
+            <nav class="hidden md:flex gap-8 text-sm text-zinc-300">
+                <a class="hover:text-white transition" href="#">Home</a>
+                <a class="hover:text-white transition" href="#">Gallery</a>
+                <a class="hover:text-white transition" href="#">Contact</a>
+            </nav>
+
+            <div class="menuBtn md:hidden text-3xl cursor-pointer">
+                <i class="hgi hgi-stroke hgi-rounded hgi-menu-01"></i>
+            </div>
+
+        </div>
+ 
+        <div class="">
+            <div
+                class="mobileMenu hidden w-full h-screen fixed  bg-black backdrop-blur-xl flex flex-col items-start justify-center p-5 gap-10 text-3xl">
+                <a href="#">Home</a>
+                <a href="#">Gallery</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="closeBtn hidden md:hidden text-3xl cursor-pointer fixed top-5 right-5 z-50">
+                <i class="hgi hgi-stroke hgi-rounded hgi-cancel-01"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="pt-28 text-center px-5">
+        <h2 class="text-4xl md:text-6xl font-bold">
+            Explore <span class="text-purple-400">Stunning</span> Images
+        </h2>
+        <p class="text-zinc-400 mt-4 max-w-xl mx-auto">
+            A modern premium gallery with smooth animations and cinematic UI.
+        </p>
+    </section>
+
+    <!-- GRID -->
+    <section class="container mx-auto px-5 py-12">
+
+        <div class="containar-card grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+
+    </section>
+
+    <!-- POPUP -->
+    <div
+        class="slide-popup fixed top-0 left-0 w-full h-screen bg-black/70 backdrop-blur-2xl z-50 flex items-center justify-center pointer-events-none opacity-0">
+        <div
+            class="popup-closeBtn absolute top-6 right-6 w-12 h-12 bg-white/10 hover:bg-white/20 transition rounded-full flex items-center justify-center cursor-pointer">
+            <i class="hgi hgi-stroke hgi-rounded hgi-cancel-01"></i>
+        </div>
+        <div class="max-w-3/4 h-3/4 rounded-3xl overflow-hidden shadow-2xl">
+            <img src="" alt="Done" class="popup-image w-full h-full object-cover overflow-hidden">
+        </div>
+        <div
+            class="arrow-prev text-white absolute left-6 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center cursor-pointer">
+            <i class="hgi hgi-stroke hgi-rounded hgi-arrow-left-01"></i>
+        </div>
+
+        <div
+            class="arrow-next text-white absolute right-6 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center cursor-pointer">
+            <i class="hgi hgi-stroke hgi-rounded hgi-arrow-right-01"></i>
+        </div>
+    </div>
+    <footer>
+        <div class=" flex justify-center items-center px-5 py-12 bg-white/5">
+            <p class="text-center text-zinc-400">© 2023 Premium Gallery. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
